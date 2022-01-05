@@ -11,7 +11,7 @@ import SwiftUI
 struct Mosque_OrganiserApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            PrayerGridView()
         }
     }
 }

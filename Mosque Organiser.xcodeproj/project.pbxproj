@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		7E6339CC2785961F00E9F589 /* Mosque_OrganiserApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6339CB2785961F00E9F589 /* Mosque_OrganiserApp.swift */; };
-		7E6339CE2785961F00E9F589 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6339CD2785961F00E9F589 /* ContentView.swift */; };
 		7E6339D02785962900E9F589 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E6339CF2785962900E9F589 /* Assets.xcassets */; };
 		7E6339D32785962900E9F589 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E6339D22785962900E9F589 /* Preview Assets.xcassets */; };
 		7E6339DD2785962A00E9F589 /* Mosque_OrganiserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6339DC2785962A00E9F589 /* Mosque_OrganiserTests.swift */; };
 		7E6339E72785962A00E9F589 /* Mosque_OrganiserUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6339E62785962A00E9F589 /* Mosque_OrganiserUITests.swift */; };
 		7E6339E92785962A00E9F589 /* Mosque_OrganiserUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6339E82785962A00E9F589 /* Mosque_OrganiserUITestsLaunchTests.swift */; };
+		7E6339F72785980B00E9F589 /* Prayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6339F62785980B00E9F589 /* Prayer.swift */; };
+		7E6339F92785997300E9F589 /* PrayerGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6339F82785997300E9F589 /* PrayerGridView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,6 @@
 /* Begin PBXFileReference section */
 		7E6339C82785961E00E9F589 /* Mosque Organiser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mosque Organiser.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E6339CB2785961F00E9F589 /* Mosque_OrganiserApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mosque_OrganiserApp.swift; sourceTree = "<group>"; };
-		7E6339CD2785961F00E9F589 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7E6339CF2785962900E9F589 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7E6339D22785962900E9F589 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7E6339D82785962A00E9F589 /* Mosque OrganiserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mosque OrganiserTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +44,8 @@
 		7E6339E22785962A00E9F589 /* Mosque OrganiserUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mosque OrganiserUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E6339E62785962A00E9F589 /* Mosque_OrganiserUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mosque_OrganiserUITests.swift; sourceTree = "<group>"; };
 		7E6339E82785962A00E9F589 /* Mosque_OrganiserUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mosque_OrganiserUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7E6339F62785980B00E9F589 /* Prayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prayer.swift; sourceTree = "<group>"; };
+		7E6339F82785997300E9F589 /* PrayerGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerGridView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +96,8 @@
 		7E6339CA2785961F00E9F589 /* Mosque Organiser */ = {
 			isa = PBXGroup;
 			children = (
+				7E6339F52785978400E9F589 /* PrayerTimings */,
 				7E6339CB2785961F00E9F589 /* Mosque_OrganiserApp.swift */,
-				7E6339CD2785961F00E9F589 /* ContentView.swift */,
 				7E6339CF2785962900E9F589 /* Assets.xcassets */,
 				7E6339D12785962900E9F589 /* Preview Content */,
 			);
@@ -125,6 +127,15 @@
 				7E6339E82785962A00E9F589 /* Mosque_OrganiserUITestsLaunchTests.swift */,
 			);
 			path = "Mosque OrganiserUITests";
+			sourceTree = "<group>";
+		};
+		7E6339F52785978400E9F589 /* PrayerTimings */ = {
+			isa = PBXGroup;
+			children = (
+				7E6339F62785980B00E9F589 /* Prayer.swift */,
+				7E6339F82785997300E9F589 /* PrayerGridView.swift */,
+			);
+			path = PrayerTimings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +268,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E6339CE2785961F00E9F589 /* ContentView.swift in Sources */,
+				7E6339F72785980B00E9F589 /* Prayer.swift in Sources */,
 				7E6339CC2785961F00E9F589 /* Mosque_OrganiserApp.swift in Sources */,
+				7E6339F92785997300E9F589 /* PrayerGridView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,7 +358,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -401,7 +413,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
